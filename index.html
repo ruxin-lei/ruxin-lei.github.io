@@ -152,55 +152,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-实验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>title: 实验</p>
-<p>对吗</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/12/%E5%AE%9E%E9%AA%8C/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-如何上传文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -257,26 +208,27 @@
 
 
   
-    <article id="post-关于Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-关于头文件的那点事" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: 关于Markdown<br>date: 2020-09-11 23:27:50<br>tags:<br>-</p>
-<p>#第一次使用Markdown<br>##Markdown的基础用法</p>
-<ol>
-<li>标题（#+空格）</li>
-<li>字体<br>   加粗<br>   斜体<br>   加粗斜体<br>   添加删除线</li>
-<li>引用（&gt;+文字）</li>
-<li>上下文添加分割线</li>
-<li>添加图片</li>
-<li>超链接</li>
-<li>代码</li>
-<li>列表</li>
-<li>表格</li>
-<li>反斜杠 </li>
-</ol>
+<p>title: 关于头文件的那点事<br>date: 2020-09-11 23:27:50<br>tags:<br>-</p>
+<p>#头文件的书写<br>##出手即大师手笔</p>
+<p>1.参数传递（尽量使用reference而不是value）</p>
+<p>2.学会使用const,他的好处是不会改变你不需要改变的值</p>
+<p><strong>首先我们要习惯于写Header(头文件的防卫式声明)</strong></p>
+<p>最开头记得写</p>
+<p><code>#ifndef _COMPLEX_</code></p>
+<p><code>#define _COMPLEX_</code></p>
+<p>以及在最后面加</p>
+<p><code>#endif</code></p>
+<hr>
+<p>#头文件里的class:</p>
+<p>1.complex(没有指针的类)</p>
+<p>2.string（有指针的类）</p>
+<p>##complex 的演示</p>
 
       
 
@@ -289,7 +241,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/11/%E5%85%B3%E4%BA%8EMarkdown/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/09/11/%E5%85%B3%E4%BA%8E%E5%A4%B4%E6%96%87%E4%BB%B6%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/">展开全文 >></a>
         </p>
       
 

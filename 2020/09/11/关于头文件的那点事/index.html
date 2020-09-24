@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 实验 对吗">
+  <meta name="description" content="title: 关于头文件的那点事date: 2020-09-11 23:27:50tags:- #头文件的书写##出手即大师手笔 1.参数传递（尽量使用reference而不是value） 2.学会使用const,他的好处是不会改变你不需要改变的值 首先我们要习惯于写Header(头文件的防卫式声明) 最开头记得写 #ifndef _COMPLEX_ #define _COMPLEX_ 以及在最">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2020/09/12/%E5%AE%9E%E9%AA%8C/index.html">
+<meta property="og:url" content="http://example.com/2020/09/11/%E5%85%B3%E4%BA%8E%E5%A4%B4%E6%96%87%E4%BB%B6%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 实验 对吗">
+<meta property="og:description" content="title: 关于头文件的那点事date: 2020-09-11 23:27:50tags:- #头文件的书写##出手即大师手笔 1.参数传递（尽量使用reference而不是value） 2.学会使用const,他的好处是不会改变你不需要改变的值 首先我们要习惯于写Header(头文件的防卫式声明) 最开头记得写 #ifndef _COMPLEX_ #define _COMPLEX_ 以及在最">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-12T03:15:51.764Z">
-<meta property="article:modified_time" content="2020-09-12T03:17:03.563Z">
+<meta property="article:published_time" content="2020-09-11T15:27:50.992Z">
+<meta property="article:modified_time" content="2020-09-24T15:00:32.843Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,13 +154,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-实验" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于头文件的那点事" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title: 实验</p>
-<p>对吗</p>
+        <hr>
+<p>title: 关于头文件的那点事<br>date: 2020-09-11 23:27:50<br>tags:<br>-</p>
+<p>#头文件的书写<br>##出手即大师手笔</p>
+<p>1.参数传递（尽量使用reference而不是value）</p>
+<p>2.学会使用const,他的好处是不会改变你不需要改变的值</p>
+<p><strong>首先我们要习惯于写Header(头文件的防卫式声明)</strong></p>
+<p>最开头记得写</p>
+<p><code>#ifndef _COMPLEX_</code></p>
+<p><code>#define _COMPLEX_</code></p>
+<p>以及在最后面加</p>
+<p><code>#endif</code></p>
+<hr>
+<p>#头文件里的class:</p>
+<p>1.complex(没有指针的类)</p>
+<p>2.string（有指针的类）</p>
+<p>##complex 的演示</p>
 
       
 
@@ -240,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/12/%E5%AE%9E%E9%AA%8C/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/11/%E5%85%B3%E4%BA%8E%E5%A4%B4%E6%96%87%E4%BB%B6%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -254,9 +268,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/09/12/%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2020/09/12/%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+  
+    <a href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客文章</div>
       <i class="icon-circle-right"></i>
     </a>
   
