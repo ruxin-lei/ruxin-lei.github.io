@@ -152,6 +152,81 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-随机数生成" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/28/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/">随机数生成</a>
+    </h1>
+  
+
+        
+        <a href="/2020/09/28/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/" class="archive-article-date">
+  	<time datetime="2020-09-28T14:18:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#随机数</p>
+<p>程序通常需要一个随机数源。定义在头文件random中的随机数库通过一组协作的类来解决问题：随机数引擎类和随机数分布类。</p>
+<p>一个引擎类可以生成unsigned随机数序列。</p>
+<p>一个分布类使用一个引擎类生成自己指定的随机数。</p>
+<p>##随机数引擎和分布</p>
+<p>随机数引擎是函数对象类（定义了调用运算符的类），</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">default_random_engine e;&#x2F;&#x2F;生成随机无符号数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for(size_t i&#x3D;0;i&lt;10;++i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">e()调用下一个随机数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cout &lt;&lt;e()&lt;&lt;&quot; &quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>之后为了得到一个指定范围内的数，我们是使用分布类型的对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">uniform_int_distribution&lt;unsigned&gt; u(0,9)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">default_random_engine e;&#x2F;&#x2F;生成无符号随机整数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for(size_t i&#x3D;0;i&lt;10;++i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;将u作为随机数源</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;每个调用返回值在指定范围内并均匀分布的值</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cout&lt;&lt;u(e)&lt;&lt;&quot; &quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>类似于引擎类型，分布类型也是函数对象类</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/09/28/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-如何上传文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -216,11 +291,13 @@
         <hr>
 <p>title: 关于C++基础的那点事<br>date: 2020-09-11 23:27:50<br>tags:<br>-</p>
 <p>#C++基础</p>
-<p>C++包括：</p>
+<p><strong>C++包括：</strong></p>
 <p>1.C部分</p>
 <p>2.object oriented（class、封装、继承、多态、virtual函数）</p>
 <p>3.template(泛型编程部分)</p>
 <p>4.STL(template程序库)</p>
+<p><strong>C++program的基本形式：</strong></p>
+<p>头文件（.h）+主程序（.cpp）+标准库（STL）</p>
 <p>##出手即大师手笔</p>
 <p>1.构造函数赋初值</p>
 <p>2.参数传递（尽量使用reference而不是value）</p>
@@ -231,14 +308,23 @@
 <p><code>#ifndef _COMPLEX_</code></p>
 <p><code>#define _COMPLEX_</code></p>
 <p>以及在最后面加</p>
-<p><code>#endif</code></p>
+<p><code>#endif</code> </p>
 <hr>
 <p>##良好的方式编写class:</p>
 <p>object based(基于对象)</p>
 <p>object oriented（面向对象）—————class之间的关系</p>
+<p>例：</p>
 <p>1.complex(没有指针的类)</p>
 <p>2.string（有指针的类）</p>
+<p>##构造函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">class complex </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">complex(double r&#x3D;0,double i&#x3D;0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">:re(r),im(i)&#x2F;&#x2F;利用处置列表进行赋初值</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#123;&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">private:</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">double re,im;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+<hr>
 <p>##complex 的演示</p>
+<hr>
 <p>##string 的演示</p>
 <p>string包括：</p>
 <p>1.字符（本质为ptr，指向一串字符串）</p>
@@ -256,69 +342,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/09/11/%E5%85%B3%E4%BA%8E%E5%A4%B4%E6%96%87%E4%BB%B6%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-09-10T09:58:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>小雷雷真有才<br>QQ：1355425356</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
         </p>
       
 

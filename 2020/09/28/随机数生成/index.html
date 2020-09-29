@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇博客文章 | Hexo</title>
+  <title>随机数生成 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小雷雷真有才QQ：1355425356">
+  <meta name="description" content="#随机数 程序通常需要一个随机数源。定义在头文件random中的随机数库通过一组协作的类来解决问题：随机数引擎类和随机数分布类。 一个引擎类可以生成unsigned随机数序列。 一个分布类使用一个引擎类生成自己指定的随机数。 ##随机数引擎和分布 随机数引擎是函数对象类（定义了调用运算符的类）， 123456789101112131415default_random_engine e;&#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://example.com/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="随机数生成">
+<meta property="og:url" content="http://example.com/2020/09/28/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="小雷雷真有才QQ：1355425356">
+<meta property="og:description" content="#随机数 程序通常需要一个随机数源。定义在头文件random中的随机数库通过一组协作的类来解决问题：随机数引擎类和随机数分布类。 一个引擎类可以生成unsigned随机数序列。 一个分布类使用一个引擎类生成自己指定的随机数。 ##随机数引擎和分布 随机数引擎是函数对象类（定义了调用运算符的类）， 123456789101112131415default_random_engine e;&#x2F;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-10T09:58:55.000Z">
-<meta property="article:modified_time" content="2020-09-10T10:02:51.835Z">
+<meta property="article:published_time" content="2020-09-28T14:18:50.000Z">
+<meta property="article:modified_time" content="2020-09-28T15:59:15.734Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,27 +154,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-随机数生成" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
+      随机数生成
     </h1>
   
 
         
-        <a href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-09-10T09:58:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-10</time>
+        <a href="/2020/09/28/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/" class="archive-article-date">
+  	<time datetime="2020-09-28T14:18:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>小雷雷真有才<br>QQ：1355425356</p>
+        <p>#随机数</p>
+<p>程序通常需要一个随机数源。定义在头文件random中的随机数库通过一组协作的类来解决问题：随机数引擎类和随机数分布类。</p>
+<p>一个引擎类可以生成unsigned随机数序列。</p>
+<p>一个分布类使用一个引擎类生成自己指定的随机数。</p>
+<p>##随机数引擎和分布</p>
+<p>随机数引擎是函数对象类（定义了调用运算符的类），</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">default_random_engine e;&#x2F;&#x2F;生成随机无符号数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for(size_t i&#x3D;0;i&lt;10;++i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">e()调用下一个随机数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cout &lt;&lt;e()&lt;&lt;&quot; &quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>之后为了得到一个指定范围内的数，我们是使用分布类型的对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">uniform_int_distribution&lt;unsigned&gt; u(0,9)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">default_random_engine e;&#x2F;&#x2F;生成无符号随机整数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for(size_t i&#x3D;0;i&lt;10;++i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;将u作为随机数源</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;每个调用返回值在指定范围内并均匀分布的值</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cout&lt;&lt;u(e)&lt;&lt;&quot; &quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>类似于引擎类型，分布类型也是函数对象类</p>
 
       
 
@@ -264,7 +276,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/28/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,18 +290,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/11/%E5%85%B3%E4%BA%8E%E5%A4%B4%E6%96%87%E4%BB%B6%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/09/12/%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
